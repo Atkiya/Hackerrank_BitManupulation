@@ -1,0 +1,48 @@
+Bit manipulation involves performing operations at the bit level of binary numbers. Here are some basic bit manipulation operations and concepts:
+
+Bitwise AND (&):
+
+a & b: Performs a bitwise AND operation on each pair of corresponding bits of a and b.
+Bitwise OR (|):
+
+a | b: Performs a bitwise OR operation on each pair of corresponding bits of a and b.
+Bitwise XOR (^):
+
+a ^ b: Performs a bitwise XOR (exclusive OR) operation on each pair of corresponding bits of a and b. Returns 1 for differing bits, 0 for matching bits.
+Bitwise NOT (~):
+
+~a: Inverts all the bits of a. Changes 1s to 0s and vice versa.
+Left Shift (<<):
+
+a << b: Shifts the bits of a to the left by b positions. Equivalent to multiplying a by 2^b.
+Right Shift (>>):
+
+a >> b: Shifts the bits of a to the right by b positions. Equivalent to dividing a by 2^b (for unsigned types, fills with 0s; for signed types, the behavior is implementation-defined).
+Setting a Bit:
+
+a |= (1 << b): Sets the b-th bit of a to 1.
+Clearing a Bit:
+
+a &= ~(1 << b): Clears the b-th bit of a (sets it to 0).
+Toggling a Bit:
+
+a ^= (1 << b): Toggles the b-th bit of a (changes 1s to 0s and vice versa).
+Checking if a Bit is Set:
+
+(a & (1 << b)) != 0: Checks if the b-th bit of a is set (equals 1).
+Checking if a Number is Power of Two:
+
+(a & (a - 1)) == 0: Checks if a is a power of two.
+Getting the Rightmost Set Bit:
+
+a & -a: Returns a value with only the rightmost set bit of a set.
+Counting Set Bits (Hamming Weight):
+
+__builtin_popcount(a): Returns the number of set bits in a.
+Counting Leading Zeros:
+
+__builtin_clz(a): Returns the number of leading zeros in the binary representation of a.
+Counting Trailing Zeros:
+
+__builtin_ctz(a): Returns the number of trailing zeros in the binary representation of a.
+These operations are commonly used in competitive programming, low-level programming, and situations where memory or speed optimizations are crucial.
