@@ -7,6 +7,7 @@ string rtrim(const string &);
 
 //https://www.hackerrank.com/challenges/sum-vs-xor/problem?isFullScreen=true
 //Time-Complexity: O(log(n))
+//knowing (n+i)=(n^i)+2*(n&i) so if (n+i)=(n^i) then (n&1) must be zero
 
 /*
  * Complete the 'sumXor' function below.
