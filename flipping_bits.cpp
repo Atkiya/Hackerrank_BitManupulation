@@ -22,7 +22,7 @@ long flippingBits(long n) {
     return n^0xFFFFFFFF;
   // other ways
   //  return n^4294967295;
-  // 
+  // return n^((1ull<<32ull)-1ull);
 }
 
 int main()
