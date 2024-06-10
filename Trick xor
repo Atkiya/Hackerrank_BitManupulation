@@ -1,7 +1,7 @@
 Output the integers from 1
  to n−3
-, then 229
-, 230
+, then 2^29
+, 2^30
 , and the XOR of those n−1
  numbers.
 then u will get xor of the numbers of odd indexes = xor or the numbers of even insexes
